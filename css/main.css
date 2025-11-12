@@ -1,12 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+:root {
+    --nthistle: #cdb4dbff;
+    --fairy-tale: #ffc8ddff;
+    --carnation-pink: #ffafccff;
+    --uranian-blue: #bde0feff;
+    --light-sky-blue: #a2d2ffff;
+
+    --corPr2iyinmn-blue: #355070ff;
+    --corSeg2chinese-violet: #6d597aff;
+    --corTer2china-rose: #b56576ff;
+    --destaque2light-coral: #e56b6fff;
+    --dest2buff: #eaac8bff;
+
+    --fonte-principal: "Coiny", system-ui;
+    --fonte-gigante: 60px;
+    --fonte-media: 40px;
+}
+
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    ;
 }
+body {
+    background-color: slategrey;
 
+}
 
 .card img {
     width: 400px;
@@ -20,25 +42,92 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #92140C;
+    background-color: var(--light-sky-blue);
     margin: 10px;
     border-radius: 20px;
     font-family: "Playwrite MX Guides", cursive;
-    color: white;
-    font-size: 25px;
+    color: var(--corPr2iyinmn-blue);
+    font-size: var(--fonte-media);
 }
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 #card-container {
     display: flex;
     justify-content: space-around;
-    background-color: #FFCF99;
+    background-color: var(--corPr2iyinmn-blue);
 }
 .card button {
     width: 100%;
     padding: 5px;
     border-radius: 0 0 20px 20px;
     font-family: "Playwrite MX Guides", cursive;
-    font-size: 25px;
+    font-size: 20px;
+    background-color: var(--light-sky-blue);
+
+    border-top: none;
+    border-right: var(--light-sky-blue) solid 10px;
+    border-bottom: var(--light-sky-blue) solid 10px;
+    border-left: var(--light-sky-blue) solid 10px;
 
 }
+
+.card button:hover {
+    background-color: var(--corPr2iyinmn-blue);
+    color: white;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat();
+
+    background-color: mediumpurple;
+
+}
+.banner img{
+    grid-column: 2/6;
+    grid-row:  3/6;
+}
+
+.banner .texto-foco {
+    grid-column: 8/12;
+    grid-row: 2/5;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-gigante);
+}
+.banner .texto-secundario {
+    grid-column: 8/12;
+    grid-row: 5/6;
+    text-align: center;
+    font-size: var(--fonte-media);
+}
+
+
+/* replicando banner com flex */
+.banner2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner2 img {
+
+}
+
+.texto-foco2 {
+    font-family: var(--fonte-media);
+}
+
+.texto-secundario2 {
+    font-family: var(--fonte-media);
+}
+
+
+
+
+
