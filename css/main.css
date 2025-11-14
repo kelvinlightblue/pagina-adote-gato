@@ -116,7 +116,9 @@ body {
 }
 
 .banner2 img {
-
+    width: 430px;
+    
+    
 }
 
 .texto-foco2 {
@@ -125,6 +127,67 @@ body {
 
 .texto-secundario2 {
     font-family: var(--fonte-media);
+}
+.barra-navegacao {
+    background-color: var(--corSeg2chinese-violet) !important;
+}
+
+footer {
+    background-color: var(--corPr2iyinmn-blue);
+}
+.container-footer {
+    
+    margin: 50px 204px 50px 204px;
+}
+
+#layer1-footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-footer {
+    height: 25px;
+}
+
+
+@media screen and (max-width: 430px) {
+
+    header {
+        background-color: var(--carnation-pink);
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .banner2 {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .barra-navegacao {
+        background-color: var(--corSeg2chinese-violet) !important;
+    }
+
+
+
+
+    .card {
+        width: 350px;
+    }
+
+    .card img {
+        width: 328px;
+        height: 350px;
+    }
 }
 
 
